@@ -27,6 +27,8 @@
 #define leftBack 12
 #define leftFront A1
 
+
+
 class Motor
 {
 
@@ -153,6 +155,9 @@ void setup()
   pinMode(rightB, OUTPUT);
   pinMode(leftA, OUTPUT);
   pinMode(leftB, OUTPUT);
+
+  pinMode(speedLeft, OUTPUT);
+  pinMode(speedRight, OUTPUT);
 
   sumo.setLeftSide(rightA, rightB, speedRight);
   sumo.setRightSide(leftA, leftB, speedLeft);
