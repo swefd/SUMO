@@ -66,8 +66,8 @@ public:
 class Car
 {
 public:
-  Motor *leftSide;
-  Motor *rightSide;
+  Motor *leftSide;  // * це покажчик
+  Motor *rightSide; // * це покажчик
 
   void setLeftSide(int pinF, int pinB, int pinS)
   {
@@ -147,7 +147,7 @@ public:
   }
 };
 
-Car sumo;
+Car sumo; //Створення об'єкту машинки
 
 void setup()
 {
@@ -166,4 +166,5 @@ void setup()
 
 void loop()
 {
+  sumo.debugSensors();
 }
